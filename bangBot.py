@@ -52,7 +52,7 @@ while 1:
     ircmsg = ircmsg.strip('\n\r')
     pring(ircmsg)
 
-    if ircmsg.find(":A wild Snoo appeared!") != -1:
+    if ircmsg.find(":A wild Snoo appeared!" or ":The Voat Goat appeared!") != -1:
         trigger()
 
     # respond to pingeys
